@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MenuNuoc.com – Giải pháp đặt món Online Cho Quán Nước</title>
-  <meta name="description" content="Giải pháp Menu đặt món online cho quán nước Việt Nam. Khách quét QR → Xem menu → Đặt món ngay." />
+  <title>MIND GRID – Trung Tâm Hạ Tầng Máy Chủ & Private AI Enterprise</title>
+  <meta name="description" content="Đơn vị tư vấn hạ tầng IT độc lập, kết nối mạng lưới NPP/SI hàng đầu. Tối ưu chi phí Server, Storage & Giải pháp Private AI cho Doanh nghiệp." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -18,14 +18,10 @@
             lexend: ['Lexend', 'sans-serif'],
           },
           colors: {
-            primary: '#FF6B35',
-            accent: '#F01E6C',
+            primary: '#00F2FE',
+            accent: '#4FACFE',
             orchid: '#7C3AED',
-            ink: '#0F172A',
-          },
-          borderRadius: {
-            '3xl': '1.5rem',
-            '4xl': '2rem',
+            ink: '#0B132B',
           }
         }
       }
@@ -33,7 +29,7 @@
   </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #fff; color: #0F172A; }
+    body { font-family: 'Inter', sans-serif; background: #070C18; color: #F1F5F9; }
     h1,h2,h3,h4 { font-family: 'Lexend', sans-serif; }
 
     @keyframes float {
@@ -41,8 +37,8 @@
       50%      { transform: translateY(-14px); }
     }
     @keyframes pulse-glow {
-      0%,100% { box-shadow: 0 0 0 0 rgba(255,107,53,.4); }
-      50%      { box-shadow: 0 0 24px 8px rgba(255,107,53,.18); }
+      0%,100% { box-shadow: 0 0 0 0 rgba(0, 242, 254, .4); }
+      50%      { box-shadow: 0 0 24px 8px rgba(0, 242, 254, .2); }
     }
     @keyframes fadeUp {
       from { opacity:0; transform:translateY(28px); }
@@ -54,7 +50,7 @@
     .fade-up.visible { animation: fadeUp .65s cubic-bezier(.23,1,.32,1) forwards; }
 
     .grad-text {
-      background: linear-gradient(135deg, #FF6B35, #F01E6C);
+      background: linear-gradient(135deg, #00F2FE, #4FACFE);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -62,192 +58,176 @@
     .btn-primary {
       display:inline-flex; align-items:center; gap:.5rem;
       padding:.85rem 2rem; border-radius:999px; font-weight:700; font-size:1rem;
-      background: linear-gradient(135deg, #FF6B35, #F01E6C);
-      color:#fff; border:none; cursor:pointer;
-      box-shadow: 0 8px 28px rgba(255,107,53,.35);
+      background: linear-gradient(135deg, #00F2FE, #4FACFE);
+      color:#070C18; border:none; cursor:pointer;
+      box-shadow: 0 8px 28px rgba(0, 242, 254, .3);
       transition: transform .2s, box-shadow .2s;
     }
-    .btn-primary:hover { transform:scale(1.03); box-shadow:0 12px 36px rgba(255,107,53,.45); }
+    .btn-primary:hover { transform:scale(1.03); box-shadow:0 12px 36px rgba(0, 242, 254, .45); }
     .btn-secondary {
       display:inline-flex; align-items:center; gap:.5rem;
       padding:.85rem 2rem; border-radius:999px; font-weight:700; font-size:1rem;
-      background:transparent; color:#0F172A;
-      border:2px solid #e5e7eb; cursor:pointer;
+      background:transparent; color:#F1F5F9;
+      border:2px solid rgba(255,255,255,.15); cursor:pointer;
       transition: background .2s, border-color .2s;
     }
-    .btn-secondary:hover { background:#f9fafb; border-color:#FF6B35; }
+    .btn-secondary:hover { background:rgba(255,255,255,.05); border-color:#00F2FE; }
 
     .card {
-      background:#fff; border:1px solid #f3f4f6; border-radius:1.5rem;
+      background:rgba(15, 23, 42, 0.8); border:1px solid rgba(255,255,255,.08); border-radius:1.5rem;
       padding:1.75rem; transition: transform .25s, box-shadow .25s, border-color .25s;
     }
-    .card:hover { transform:translateY(-4px); box-shadow:0 20px 50px rgba(255,107,53,.08); border-color:rgba(255,107,53,.25); }
+    .card:hover { transform:translateY(-4px); box-shadow:0 20px 50px rgba(0, 242, 254, .1); border-color:rgba(0, 242, 254, .3); }
 
     /* Nav */
-    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,.85); backdrop-filter:blur(18px); border-bottom:1px solid rgba(229,231,235,.7); }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(7, 12, 24, 0.85); backdrop-filter:blur(18px); border-bottom:1px solid rgba(255,255,255,.08); }
     .nav-inner { max-width:1200px; margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; justify-content:space-between; height:64px; }
     .nav-logo { display:flex; align-items:center; gap:.6rem; text-decoration:none; }
-    .nav-logo-box { width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#FF6B35,#F01E6C);display:flex;align-items:center;justify-content:center; }
-    .nav-logo-box span { color:#fff;font-family:'Lexend',sans-serif;font-weight:700;font-size:.8rem; }
-    .nav-brand { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;color:#0F172A; }
-    .nav-brand em { color:#FF6B35;font-style:normal; }
+    .nav-logo-box { width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#00F2FE,#4FACFE);display:flex;align-items:center;justify-content:center; }
+    .nav-logo-box span { color:#070C18;font-family:'Lexend',sans-serif;font-weight:800;font-size:.9rem; }
+    .nav-brand { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;color:#FFF; }
+    .nav-brand em { color:#00F2FE;font-style:normal; }
     .nav-links { display:flex; gap:2rem; }
-    .nav-links a { text-decoration:none;font-size:.9rem;font-weight:500;color:#64748b;transition:color .2s; }
-    .nav-links a:hover { color:#0F172A; }
+    .nav-links a { text-decoration:none;font-size:.9rem;font-weight:500;color:#94A3B8;transition:color .2s; }
+    .nav-links a:hover { color:#00F2FE; }
     .nav-cta { display:flex; align-items:center; gap:.75rem; }
     .hamburger { display:none; background:none;border:none;cursor:pointer;padding:.4rem; }
-    .hamburger span { display:block;width:22px;height:2px;background:#0F172A;margin:4px 0;border-radius:2px;transition:.3s; }
-    .mobile-menu { display:none; background:#fff; padding:1rem 1.5rem; border-top:1px solid #f3f4f6; }
+    .hamburger span { display:block;width:22px;height:2px;background:#FFF;margin:4px 0;border-radius:2px;transition:.3s; }
+    .mobile-menu { display:none; background:#0F172A; padding:1rem 1.5rem; border-top:1px solid rgba(255,255,255,.1); }
     .mobile-menu.open { display:block; }
-    .mobile-menu a { display:block;padding:.6rem 0;font-size:.95rem;color:#64748b;text-decoration:none; }
+    .mobile-menu a { display:block;padding:.6rem 0;font-size:.95rem;color:#94A3B8;text-decoration:none; }
     @media(max-width:768px){
       .nav-links,.nav-cta { display:none; }
       .hamburger { display:block; }
     }
 
     /* Hero */
-    .hero { padding:6rem 0 4rem; background:linear-gradient(160deg,#fff9f7 0%,#fff 50%,#fff5f9 100%); overflow:hidden; }
+    .hero { padding:6rem 0 4rem; background:radial-gradient(circle at 50% 0%, rgba(0,242,254,0.12), transparent 70%); overflow:hidden; }
     .hero-inner { max-width:1200px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center; }
     @media(max-width:900px){ .hero-inner { grid-template-columns:1fr; } .hero-right { display:none; } }
-    .hero-badge { display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border-radius:999px;background:rgba(255,107,53,.1);color:#FF6B35;font-size:.85rem;font-weight:600;margin-bottom:1.25rem; }
-    .hero-badge span { width:8px;height:8px;border-radius:50%;background:#FF6B35;display:block;animation:pulse-glow 2s infinite; }
-    h1.hero-title { font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.1;font-weight:800;margin-bottom:1.25rem; }
-    .hero-sub { font-size:1.1rem;line-height:1.7;color:#64748b;max-width:520px;margin-bottom:2rem; }
-    .hero-sub strong { color:#0F172A; }
+    .hero-badge { display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border-radius:999px;background:rgba(0,242,254,.1);color:#00F2FE;font-size:.85rem;font-weight:600;margin-bottom:1.25rem;border:1px solid rgba(0,242,254,.2); }
+    .hero-badge span { width:8px;height:8px;border-radius:50%;background:#00F2FE;display:block;animation:pulse-glow 2s infinite; }
+    h1.hero-title { font-size:clamp(2.2rem,5vw,3.3rem);line-height:1.15;font-weight:800;margin-bottom:1.25rem; }
+    .hero-sub { font-size:1.05rem;line-height:1.7;color:#94A3B8;max-width:520px;margin-bottom:2rem; }
+    .hero-sub strong { color:#FFF; }
     .hero-btns { display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem; }
     .trust-bar { display:flex;gap:1.5rem;flex-wrap:wrap; }
     .trust-item { display:flex;align-items:center;gap:.6rem; }
-    .trust-icon { width:40px;height:40px;border-radius:10px;background:rgba(255,107,53,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem; }
-    .trust-val { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;line-height:1; color:#0F172A; }
-    .trust-lbl { font-size:.75rem;color:#94a3b8; }
+    .trust-icon { width:40px;height:40px;border-radius:10px;background:rgba(0,242,254,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem; }
+    .trust-val { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.05rem;line-height:1; color:#FFF; }
+    .trust-lbl { font-size:.75rem;color:#64748B; }
 
     .hero-right { display:flex;justify-content:center;align-items:center;position:relative; }
     .phone-wrap { position:relative; }
-    .phone-glow { position:absolute;inset:-2rem;background:radial-gradient(circle,rgba(255,107,53,.15),transparent 70%);border-radius:50%;pointer-events:none; }
-    .phone-frame { width:280px;border-radius:2rem;overflow:hidden;border:8px solid rgba(15,23,42,.06);box-shadow:0 32px 80px rgba(15,23,42,.12); }
+    .phone-glow { position:absolute;inset:-2rem;background:radial-gradient(circle,rgba(0,242,254,.2),transparent 70%);border-radius:50%;pointer-events:none; }
+    .phone-frame { width:320px;border-radius:1.5rem;overflow:hidden;border:2px solid rgba(0,242,254,.3);box-shadow:0 32px 80px rgba(0,0,0,.6); }
     .phone-frame img { width:100%;display:block; }
-    .bubble { position:absolute;background:#fff;border-radius:1rem;padding:.6rem 1rem;box-shadow:0 8px 30px rgba(15,23,42,.1);border:1px solid rgba(229,231,235,.6);display:flex;align-items:center;gap:.6rem; }
-    .bubble .bname { font-size:.75rem;font-weight:600;color:#0F172A; }
-    .bubble .bprice { font-size:.75rem;font-weight:700;color:#FF6B35; }
-    .bubble-1 { left:-4rem;top:25%; }
-    .bubble-2 { right:-3.5rem;bottom:30%; }
+    .bubble { position:absolute;background:rgba(15, 23, 42, 0.9);border-radius:1rem;padding:.75rem 1rem;box-shadow:0 8px 30px rgba(0,0,0,.5);border:1px solid rgba(0,242,254,.3);display:flex;align-items:center;gap:.6rem;backdrop-filter:blur(10px); }
+    .bubble .bname { font-size:.75rem;font-weight:600;color:#FFF; }
+    .bubble .bprice { font-size:.75rem;font-weight:700;color:#00F2FE; }
+    .bubble-1 { left:-3rem;top:20%; }
+    .bubble-2 { right:-2.5rem;bottom:25%; }
 
     /* Section header */
     .section-header { text-align:center;margin-bottom:3.5rem; }
-    .section-badge { display:inline-flex;align-items:center;padding:.4rem 1rem;border-radius:999px;background:rgba(255,107,53,.1);color:#FF6B35;font-size:.82rem;font-weight:600;margin-bottom:1rem; }
-    h2.section-title { font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:.75rem; }
-    .section-sub { font-size:1rem;color:#64748b;max-width:560px;margin:0 auto; }
+    .section-badge { display:inline-flex;align-items:center;padding:.4rem 1rem;border-radius:999px;background:rgba(0,242,254,.1);color:#00F2FE;font-size:.82rem;font-weight:600;margin-bottom:1rem;border:1px solid rgba(0,242,254,.2); }
+    h2.section-title { font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:.75rem;color:#FFF; }
+    .section-sub { font-size:1rem;color:#94A3B8;max-width:580px;margin:0 auto; }
 
     /* Features */
-    #features { padding:5rem 0;background:#f9fafb; }
+    #features { padding:5rem 0;background:#0A101D; }
     .features-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto;padding:0 1.5rem; }
     @media(max-width:900px){ .features-grid { grid-template-columns:1fr 1fr; } }
     @media(max-width:580px){ .features-grid { grid-template-columns:1fr; } }
     .feat-icon { width:56px;height:56px;border-radius:1rem;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:1.1rem; }
 
     /* How it works */
-    #how { padding:5rem 0;background:linear-gradient(180deg,#fff,#fff9f7,#fff); }
+    #how { padding:5rem 0;background:#070C18; }
     .steps-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:1100px;margin:0 auto;padding:0 1.5rem;text-align:center;position:relative; }
     @media(max-width:900px){ .steps-grid { grid-template-columns:1fr 1fr; } }
     @media(max-width:500px){ .steps-grid { grid-template-columns:1fr; } }
     .step-icon { width:80px;height:80px;border-radius:1.5rem;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1.1rem; }
-    .step-num { font-size:.75rem;font-weight:700;color:#FF6B35;letter-spacing:.12em;margin-bottom:.4rem; }
+    .step-num { font-size:.75rem;font-weight:700;color:#00F2FE;letter-spacing:.12em;margin-bottom:.4rem; }
 
     /* Use cases */
-    #use-cases { padding:5rem 0;background:#f9fafb; }
+    #use-cases { padding:5rem 0;background:#0A101D; }
     .use-cases-inner { max-width:1100px;margin:0 auto;padding:0 1.5rem; }
     .use-case-row { display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem; }
     @media(max-width:768px){ .use-case-row { grid-template-columns:1fr; } }
     .use-case-row:last-child { margin-bottom:0; }
-    .use-case-img { border-radius:1.5rem;overflow:hidden;box-shadow:0 20px 60px rgba(15,23,42,.08); }
-    .use-case-img img { width:100%;height:260px;object-fit:cover;display:block; }
-    .use-case-tag { font-size:.85rem;font-weight:600;color:#FF6B35;margin-bottom:.5rem; }
+    .use-case-img { border-radius:1.5rem;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.1); }
+    .use-case-img img { width:100%;height:280px;object-fit:cover;display:block; }
+    .use-case-tag { font-size:.85rem;font-weight:600;color:#00F2FE;margin-bottom:.5rem; }
     .stats-row { display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:1.5rem; }
-    .stat-box { background:#fff;border-radius:1rem;padding:1rem;text-align:center;border:1px solid #f3f4f6; }
+    .stat-box { background:rgba(15, 23, 42, 0.8);border-radius:1rem;padding:1rem;text-align:center;border:1px solid rgba(255,255,255,.08); }
     .stat-icon { font-size:1.2rem;margin-bottom:.3rem; }
-    .stat-val { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.2rem;color:#0F172A; }
-    .stat-lbl { font-size:.7rem;color:#94a3b8;margin-top:.2rem; }
+    .stat-val { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.2rem;color:#FFF; }
+    .stat-lbl { font-size:.7rem;color:#64748B;margin-top:.2rem; }
 
     /* Pricing */
-    #pricing { padding:5rem 0; }
-    .pricing-toggle { display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:3rem; }
-    .toggle-label { font-size:.9rem;font-weight:500;color:#94a3b8; }
-    .toggle-label.active { color:#0F172A; }
-    .toggle-switch { position:relative;width:48px;height:26px;background:#e5e7eb;border-radius:999px;cursor:pointer;transition:background .3s; }
-    .toggle-switch.on { background:#FF6B35; }
-    .toggle-thumb { position:absolute;top:3px;left:3px;width:20px;height:20px;background:#fff;border-radius:50%;transition:transform .3s;box-shadow:0 1px 4px rgba(0,0,0,.2); }
-    .toggle-switch.on .toggle-thumb { transform:translateX(22px); }
-    .yearly-badge { padding:.25rem .75rem;border-radius:999px;background:#ede9fe;color:#7C3AED;font-size:.75rem;font-weight:700; }
-    .pricing-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1000px;margin:0 auto;padding:0 1.5rem;align-items:start; }
+    #pricing { padding:5rem 0; background:#070C18; }
+    .pricing-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1050px;margin:0 auto;padding:0 1.5rem;align-items:start; }
     @media(max-width:800px){ .pricing-grid { grid-template-columns:1fr; max-width:440px; } }
-    .price-card { background:#fff;border:1px solid #f3f4f6;border-radius:1.75rem;padding:2rem;transition:box-shadow .25s; }
-    .price-card.popular { background:#0F172A;color:#fff;transform:scale(1.03);box-shadow:0 32px 80px rgba(15,23,42,.2); }
-    .price-popular-badge { display:inline-block;padding:.3rem 1rem;border-radius:999px;background:linear-gradient(135deg,#FF6B35,#F01E6C);color:#fff;font-size:.75rem;font-weight:700;margin-bottom:1rem; }
-    .price-name { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.2rem;margin-bottom:.25rem; }
-    .price-desc { font-size:.85rem;color:#94a3b8;margin-bottom:1.25rem; }
-    .price-popular .price-desc { color:rgba(255,255,255,.6); }
-    .price-amount { font-family:'Lexend',sans-serif;font-weight:800;font-size:2.5rem;line-height:1; }
-    .price-amount sup { font-size:1rem;font-weight:600; }
-    .price-period { font-size:.85rem;color:#94a3b8;margin-bottom:1.5rem; }
+    .price-card { background:rgba(15, 23, 42, 0.6);border:1px solid rgba(255,255,255,.08);border-radius:1.75rem;padding:2rem;transition:box-shadow .25s; }
+    .price-card.popular { background:rgba(15, 23, 42, 0.95);border-color:rgba(0, 242, 254, .4);transform:scale(1.03);box-shadow:0 32px 80px rgba(0, 242, 254, .15); }
+    .price-popular-badge { display:inline-block;padding:.3rem 1rem;border-radius:999px;background:linear-gradient(135deg,#00F2FE,#4FACFE);color:#070C18;font-size:.75rem;font-weight:700;margin-bottom:1rem; }
+    .price-name { font-family:'Lexend',sans-serif;font-weight:700;font-size:1.3rem;margin-bottom:.25rem;color:#FFF; }
+    .price-desc { font-size:.85rem;color:#94A3B8;margin-bottom:1.25rem; }
+    .price-amount { font-family:'Lexend',sans-serif;font-weight:800;font-size:1.8rem;line-height:1.2; color:#00F2FE; margin-bottom: 1rem; }
+    
     .price-features { list-style:none;space-y:.75rem;margin-bottom:2rem; }
-    .price-features li { display:flex;align-items:flex-start;gap:.6rem;font-size:.9rem;color:#64748b;padding:.4rem 0;border-bottom:1px solid #f9fafb; }
-    .price-card.popular .price-features li { color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.08); }
-    .price-features li::before { content:'✓';color:#FF6B35;font-weight:700;flex-shrink:0;margin-top:.05rem; }
+    .price-features li { display:flex;align-items:flex-start;gap:.6rem;font-size:.88rem;color:#CBD5E1;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.05); }
+    .price-features li::before { content:'✓';color:#00F2FE;font-weight:700;flex-shrink:0;margin-top:.05rem; }
     .price-btn { width:100%;padding:.85rem;border-radius:999px;font-weight:700;font-size:.95rem;cursor:pointer;border:none;transition:all .2s; }
-    .price-btn-primary { background:linear-gradient(135deg,#FF6B35,#F01E6C);color:#fff;box-shadow:0 6px 20px rgba(255,107,53,.3); }
-    .price-btn-primary:hover { box-shadow:0 10px 30px rgba(255,107,53,.45);transform:translateY(-1px); }
-    .price-btn-secondary { background:#f1f5f9;color:#0F172A; }
-    .price-btn-secondary:hover { background:#e2e8f0; }
+    .price-btn-primary { background:linear-gradient(135deg,#00F2FE,#4FACFE);color:#070C18;box-shadow:0 6px 20px rgba(0,242,254,.3); }
+    .price-btn-primary:hover { box-shadow:0 10px 30px rgba(0,242,254,.45);transform:translateY(-1px); }
+    .price-btn-secondary { background:rgba(255,255,255,.08);color:#FFF; border: 1px solid rgba(255,255,255,.15); }
+    .price-btn-secondary:hover { background:rgba(255,255,255,.15); }
 
     /* Testimonials */
-    #testimonials { padding:5rem 0;background:#f9fafb; }
+    #testimonials { padding:5rem 0;background:#0A101D; }
     .testi-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto;padding:0 1.5rem; }
     @media(max-width:900px){ .testi-grid { grid-template-columns:1fr 1fr; } }
     @media(max-width:580px){ .testi-grid { grid-template-columns:1fr; } }
-    .stars { color:#fbbf24;font-size:1rem;margin-bottom:1rem; }
-    .testi-text { font-size:.93rem;color:#64748b;line-height:1.7;margin-bottom:1.25rem; }
+    .stars { color:#00F2FE;font-size:1rem;margin-bottom:1rem; }
+    .testi-text { font-size:.93rem;color:#94A3B8;line-height:1.7;margin-bottom:1.25rem; }
     .testi-author { display:flex;align-items:center;gap:.75rem; }
-    .avatar { width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#FF6B35,#F01E6C);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
-    .author-name { font-weight:600;font-size:.9rem;color:#0F172A; }
-    .author-meta { font-size:.75rem;color:#94a3b8; }
+    .avatar { width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#00F2FE,#4FACFE);color:#070C18;font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+    .author-name { font-weight:600;font-size:.9rem;color:#FFF; }
+    .author-meta { font-size:.75rem;color:#64748B; }
 
     /* Final CTA */
-    #final-cta { padding:5rem 0;background:#0F172A;position:relative;overflow:hidden; }
-    .cta-glow1 { position:absolute;top:-100px;left:20%;width:500px;height:500px;background:rgba(255,107,53,.15);border-radius:50%;filter:blur(100px);pointer-events:none; }
-    .cta-glow2 { position:absolute;bottom:-100px;right:20%;width:500px;height:500px;background:rgba(240,30,108,.12);border-radius:50%;filter:blur(100px);pointer-events:none; }
+    #final-cta { padding:5rem 0;background:#070C18;position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.05); }
+    .cta-glow1 { position:absolute;top:-100px;left:20%;width:500px;height:500px;background:rgba(0,242,254,.1);border-radius:50%;filter:blur(100px);pointer-events:none; }
+    .cta-glow2 { position:absolute;bottom:-100px;right:20%;width:500px;height:500px;background:rgba(79,172,254,.1);border-radius:50%;filter:blur(100px);pointer-events:none; }
     .cta-inner { max-width:720px;margin:0 auto;padding:0 1.5rem;text-align:center;position:relative;z-index:1; }
-    .cta-offer { display:inline-block;padding:.5rem 1.25rem;border-radius:999px;border:1px solid rgba(255,107,53,.3);background:rgba(255,107,53,.12);color:#FF6B35;font-size:.85rem;font-weight:600;margin-bottom:1.5rem; }
+    .cta-offer { display:inline-block;padding:.5rem 1.25rem;border-radius:999px;border:1px solid rgba(0,242,254,.3);background:rgba(0,242,254,.1);color:#00F2FE;font-size:.85rem;font-weight:600;margin-bottom:1.5rem; }
     h2.cta-title { font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:1rem; }
-    .cta-sub { font-size:1rem;color:rgba(255,255,255,.55);max-width:500px;margin:0 auto 2.5rem; }
+    .cta-sub { font-size:1rem;color:#94A3B8;max-width:500px;margin:0 auto 2.5rem; }
     .cta-btns { display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem; }
-    .btn-cta-dark { display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:999px;font-weight:700;font-size:1rem;cursor:pointer;border:2px solid rgba(255,255,255,.2);background:transparent;color:#fff;transition:all .2s; }
-    .btn-cta-dark:hover { border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.06); }
     .trust-badges { display:flex;gap:2rem;justify-content:center;flex-wrap:wrap; }
-    .trust-badge { display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:rgba(255,255,255,.4); }
+    .trust-badge { display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:#64748B; }
 
     /* Footer */
-    footer { background:#0a0f1a;color:rgba(255,255,255,.6);padding:4rem 0 2rem; }
+    footer { background:#030712;color:#64748B;padding:4rem 0 2rem; border-top:1px solid rgba(255,255,255,.05); }
     .footer-inner { max-width:1200px;margin:0 auto;padding:0 1.5rem; }
     .footer-grid { display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem; }
     @media(max-width:900px){ .footer-grid { grid-template-columns:1fr 1fr; } }
     @media(max-width:500px){ .footer-grid { grid-template-columns:1fr; } }
     .footer-logo { display:flex;align-items:center;gap:.6rem;margin-bottom:1rem;text-decoration:none; }
-    .footer-desc { font-size:.88rem;line-height:1.7;max-width:300px;margin-bottom:1.25rem; }
-    .footer-contact a { display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;margin-bottom:.6rem;transition:color .2s; }
-    .footer-contact a:hover { color:rgba(255,255,255,.8); }
+    .footer-desc { font-size:.88rem;line-height:1.7;max-width:320px;margin-bottom:1.25rem;color:#94A3B8; }
+    .footer-contact a { display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:#94A3B8;text-decoration:none;margin-bottom:.6rem;transition:color .2s; }
+    .footer-contact a:hover { color:#00F2FE; }
     .footer-col h4 { font-family:'Lexend',sans-serif;font-size:.85rem;font-weight:600;color:#fff;margin-bottom:1rem; }
     .footer-col ul { list-style:none; }
     .footer-col ul li { margin-bottom:.5rem; }
-    .footer-col ul li a { font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s; }
-    .footer-col ul li a:hover { color:rgba(255,255,255,.8); }
+    .footer-col ul li a { font-size:.85rem;color:#64748B;text-decoration:none;transition:color .2s; }
+    .footer-col ul li a:hover { color:#00F2FE; }
     .footer-bottom { border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem; }
-    .footer-bottom p { font-size:.8rem;color:rgba(255,255,255,.3); }
-    .social-links { display:flex;gap:1.25rem; }
-    .social-links a { font-size:.8rem;color:rgba(255,255,255,.35);text-decoration:none;transition:color .2s; }
-    .social-links a:hover { color:rgba(255,255,255,.7); }
+    .footer-bottom p { font-size:.8rem;color:#475569; }
 
     /* Floating button */
-    #float-btn { position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6B35,#F01E6C);color:#fff;border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 6px 24px rgba(255,107,53,.4);transition:transform .2s; }
+    #float-btn { position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#00F2FE,#4FACFE);color:#070C18;border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 6px 24px rgba(0,242,254,.4);transition:transform .2s; }
     #float-btn:hover { transform:scale(1.1); }
     #float-btn.show { display:flex; }
   </style>
@@ -258,62 +238,62 @@
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-box"><span>MN</span></div>
-      <span class="nav-brand">Menu<em>Nuoc</em></span>
+      <div class="nav-logo-box"><span>MG</span></div>
+      <span class="nav-brand">MIND<em>GRID</em></span>
     </a>
     <div class="nav-links">
-      <a href="#features">Tính năng</a>
-      <a href="#how">Cách hoạt động</a>
-      <a href="#pricing">Bảng giá</a>
-      <a href="#testimonials">Đánh giá</a>
+      <a href="#features">Thế Mạnh</a>
+      <a href="#how">Quy Trình Presales</a>
+      <a href="#use-cases">Giải Pháp AI/Server</a>
+      <a href="#pricing">Mô Hình Dịch Vụ</a>
+      <a href="#testimonials">Đối Tác B2B</a>
     </div>
     <div class="nav-cta">
-      <button class="btn-primary" style="padding:.55rem 1.25rem;font-size:.9rem;">Nhận Tư Vấn Miễn Phí</button>
+      <button class="btn-primary" style="padding:.55rem 1.25rem;font-size:.9rem;" onclick="openModal('Tư Vấn Chung')">Nhận Tư Vấn Presales</button>
     </div>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#features" onclick="closeMenu()">Tính năng</a>
-    <a href="#how" onclick="closeMenu()">Cách hoạt động</a>
-    <a href="#pricing" onclick="closeMenu()">Bảng giá</a>
-    <a href="#testimonials" onclick="closeMenu()">Đánh giá</a>
-    <div style="padding-top:.75rem;display:flex;flex-direction:column;gap:.5rem;border-top:1px solid #f3f4f6;margin-top:.5rem;">
-      
-      <button class="btn-primary" style="width:100%;justify-content:center;">Nhận Tư Vấn Miễn Phí</button>
+    <a href="#features" onclick="closeMenu()">Thế Mạnh</a>
+    <a href="#how" onclick="closeMenu()">Quy Trình Presales</a>
+    <a href="#use-cases" onclick="closeMenu()">Giải Pháp AI/Server</a>
+    <a href="#pricing" onclick="closeMenu()">Mô Hình Dịch Vụ</a>
+    <a href="#testimonials" onclick="closeMenu()">Đối Tác B2B</a>
+    <div style="padding-top:.75rem;display:flex;flex-direction:column;gap:.5rem;border-top:1px solid rgba(255,255,255,.1);margin-top:.5rem;">
+      <button class="btn-primary" style="width:100%;justify-content:center;" onclick="openModal('Tư Vấn Mobile')">Nhận Tư Vấn Presales</button>
     </div>
   </div>
 </nav>
 
 <!-- ===== HERO ===== -->
-<section class="hero" style="padding-top:5.5rem;">
+<section class="hero" style="padding-top:6.5rem;">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge fade-up"><span></span>Giải pháp tiện lợi cho các quán nước Việt Nam</div>
+      <div class="hero-badge fade-up"><span></span>Đơn vị tư vấn độc lập & Kết nối B2B Hub</div>
       <h1 class="hero-title fade-up">
-        <span class="grad-text">Menu QR</span> Thông Minh Cho Quán Nước
+        Tư Vấn Hạ Tầng IT & <span class="grad-text">Private AI Enterprise</span>
       </h1>
       <p class="hero-sub fade-up">
-        Khách quét QR → Xem menu → Đặt món ngay.
-        <strong>Không cần app, Không cần đăng ký.</strong>
+        MIND GRID đóng vai trò làm đại diện Kỹ thuật & Thương mại cho Doanh nghiệp. Kết nối trực tiếp bài toán hạ tầng của bạn với mạng lưới Hãng và Nhà Phân Phối lớn.
+        <strong>Tối ưu TCO, chuẩn hiệu năng, bảo mật 100%.</strong>
       </p>
       <div class="hero-btns fade-up">
-        <button class="btn-primary">🚀 Nhận Tư Vấn Miễn Phí</button>
-        <button class="btn-secondary">▶ Xem Demo</button>
+        <button class="btn-primary pulse-glow" onclick="openModal('Yêu Cầu Báo Giá Dự Án')">🚀 Nhận File Quote & Thiết Kế Cấu Hình</button>
       </div>
       <div class="trust-bar fade-up">
         <div class="trust-item">
-          <div class="trust-icon">⚡</div>
-          <div><div class="trust-val">Nhận đơn tức thời</div><div class="trust-lbl">Không lo sót đơn</div></div>
+          <div class="trust-icon">🤝</div>
+          <div><div class="trust-val">Đàm Phán Deal</div><div class="trust-lbl">Giá gốc từ Hãng / NPP</div></div>
         </div>
         <div class="trust-item">
-          <div class="trust-icon">📊</div>
-          <div><div class="trust-val">Thống kê doanh thu tự động</div><div class="trust-lbl">Không phải mất thời gian cộng doanh thu</div></div>
+          <div class="trust-icon">🧠</div>
+          <div><div class="trust-val">Chuẩn Workload</div><div class="trust-lbl">Zero-waste Architecture</div></div>
         </div>
         <div class="trust-item">
-          <div class="trust-icon">⭐</div>
-          <div><div class="trust-val">Chỉ từ 1499K/1 lần triển khai</div><div class="trust-lbl">tiết kiệm và hiệu quả </div></div>
+          <div class="trust-icon">🔒</div>
+          <div><div class="trust-val">Single Point</div><div class="trust-lbl">Một đầu mối quản trị rủi ro</div></div>
         </div>
       </div>
     </div>
@@ -321,15 +301,15 @@
       <div class="phone-wrap animate-float">
         <div class="phone-glow"></div>
         <div class="phone-frame">
-          <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/48fa2dee3_generated_2ba13eb8.png" alt="MenuNuoc QR Menu" />
+          <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/48fa2dee3_generated_2ba13eb8.png" alt="MIND GRID Server & Private AI Architecture" />
         </div>
         <div class="bubble bubble-1">
-          <span style="font-size:1.3rem">🧋</span>
-          <div><div class="bname">Trà Sữa Nhãn Tươi</div><div class="bprice">45.000đ</div></div>
+          <span style="font-size:1.3rem">🖥️</span>
+          <div><div class="bname">Server Local AI Cluster</div><div class="bprice">Tối Ưu Ngân Sách</div></div>
         </div>
         <div class="bubble bubble-2">
-          <span style="font-size:1.3rem">☕</span>
-          <div><div class="bname">Cà Phê Muối</div><div class="bprice">35.000đ</div></div>
+          <span style="font-size:1.3rem">💾</span>
+          <div><div class="bname">Storage Pool 16TB+</div><div class="bprice">Deal Giá Gốc NPP</div></div>
         </div>
       </div>
     </div>
@@ -340,41 +320,40 @@
 <section id="features">
   <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
     <div class="section-header">
-      <div class="section-badge">Tính năng nổi bật</div>
-      <h2 class="section-title">Mọi thứ bạn cần để <span class="grad-text">số hóa</span> quán nước</h2>
-      <p class="section-sub">Từ menu QR đến thống kê doanh thu, MenuNuoc giúp quán bạn chạy mượt hơn mỗi ngày.</p>
+      <div class="section-badge">Vì sao chọn MIND GRID</div>
+      <h2 class="section-title">Khác biệt hoàn toàn so với <span class="grad-text">"Tự đi mua lẻ"</span></h2>
+      <p class="section-sub">Chúng tôi đứng về phía Doanh nghiệp để giải bài toán hạ tầng kỹ thuật và thương lượng mức chiết khấu cao nhất.</p>
     </div>
     <div class="features-grid">
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(240,30,108,.1));">📱</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Menu QR Thông Minh</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Khách quét QR xem menu đẹp, cập nhật giá realtime. Không cần in lại menu khi đổi giá.</p>
+        <div class="feat-icon" style="background:rgba(0, 242, 254, 0.1); color:#00F2FE;">💎</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Đàm Phán Deal Giá Gốc</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Tận dụng quy mô mạng lưới để lấy Special Pricing từ Hãng/NPP trực tiếp cho dự án của bạn.</p>
       </div>
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(240,30,108,.12),rgba(124,58,237,.1));">🛒</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Đặt Món Tự Động</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Khách tự chọn món, thêm topping, ghi chú. Đơn tự động gửi về điện thoại của bạn.</p>
+        <div class="feat-icon" style="background:rgba(79, 172, 254, 0.1); color:#4FACFE;">📐</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Kiến Trúc Độc Lập & Chuẩn Xác</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Phân tích đúng Workload (Database, AI/RAG, Ảo hóa) để thiết kế vừa vặn, không mua thừa cấu hình.</p>
       </div>
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(79,70,229,.1));">💳</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Thanh Toán Đa Dạng</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Hỗ trợ bill có mã QR chuyển khoản hoặc tiền mặt. Khách thanh toán nhanh gọn.</p>
+        <div class="feat-icon" style="background:rgba(124, 58, 237, 0.1); color:#7C3AED;">🛡️</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Một Đầu Mối Quản Trị Rủi Ro</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Xử lý 100% rủi ro bảo hành, linh kiện thay thế và CO/CQ chính hãng. Triệt tiêu rủi ro Downtime.</p>
       </div>
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(79,70,229,.12),rgba(59,130,246,.1));">📊</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Thống Kê Real-time</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Theo dõi doanh thu, món bán chạy. Ra quyết định mới dựa trên dữ liệu thực tế.</p>
+        <div class="feat-icon" style="background:rgba(0, 242, 254, 0.1); color:#00F2FE;">🤖</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Chuyên Sâu Private AI Hardware</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Tư vấn hạ tầng phần cứng chuyên biệt cho chạy Local LLM, Vector Database và RAG nội bộ.</p>
       </div>
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(20,184,166,.1));">🎨</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Làm Sẵn - Quán Chỉ Việc Dùng</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Gửi tên quán, menu, ảnh món.
-       Nhận link QR trong 24h - không phải làm gì thêm!</p>
+        <div class="feat-icon" style="background:rgba(79, 172, 254, 0.1); color:#4FACFE;">⚙️</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Tối Ưu Tổng Chi Phí (TCO)</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Tính toán toàn diện chi phí đầu tư (CapEx) và vận hành điện năng, linh kiện nâng cấp (OpEx).</p>
       </div>
       <div class="card fade-up">
-        <div class="feat-icon" style="background:linear-gradient(135deg,rgba(20,184,166,.12),rgba(34,197,94,.1));">⚡</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Tốc Độ Cao</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Trang tải dưới 1 giây. Trải nghiệm mượt mà trên mọi thiết bị.</p>
+        <div class="feat-icon" style="background:rgba(124, 58, 237, 0.1); color:#7C3AED;">🌐</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Hệ Sinh Thái Multi-Vendor</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Linh hoạt chọn phần cứng tốt nhất từ Dell, Supermicro, HPE, Toshiba Enterprise, NVIDIA...</p>
       </div>
     </div>
   </div>
@@ -384,34 +363,34 @@
 <section id="how">
   <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
     <div class="section-header">
-      <div class="section-badge">Đơn giản &amp; Nhanh chóng</div>
-      <h2 class="section-title">4 bước để <span class="grad-text">hiện đại hóa</span> quán nước</h2>
-      <p class="section-sub">Setup nhanh trong 24h. Không phức tạp, không cần kỹ thuật.</p>
+      <div class="section-badge">Quy Trình 4 Bước</div>
+      <h2 class="section-title">Đồng hành cùng <span class="grad-text">Doanh Nghiệp</span></h2>
+      <p class="section-sub">Từng bước chuẩn hóa hạ tầng từ tư vấn bài toán đến khi bàn giao vận hành.</p>
     </div>
     <div class="steps-grid">
       <div class="fade-up">
-        <div class="step-icon" style="background:linear-gradient(135deg,#FF6B35,#ef4444);">📨</div>
+        <div class="step-icon" style="background:rgba(0, 242, 254, 0.1); color:#00F2FE;">🔍</div>
         <div class="step-num">BƯỚC 01</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Gửi menu quán</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Chỉ cần gửi menu hiện tại (ảnh, file, hay text). Chúng tôi lo phần còn lại.</p>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Khảo sát & Phân tích</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Đánh giá hạ tầng hiện tại và yêu cầu bài toán thực tế của doanh nghiệp.</p>
       </div>
       <div class="fade-up">
-        <div class="step-icon" style="background:linear-gradient(135deg,#F01E6C,#e11d48);">✏️</div>
+        <div class="step-icon" style="background:rgba(79, 172, 254, 0.1); color:#4FACFE;">📝</div>
         <div class="step-num">BƯỚC 02</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Thiết kế website</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Đội ngũ chỉnh sửa thông tin chính xác với yêu cầu của quán bạn trong 24h.</p>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Thiết kế Giải pháp</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Lập bản vẽ cấu hình và báo cáo tối ưu về mặt kỹ thuật lẫn ngân sách đầu tư.</p>
       </div>
       <div class="fade-up">
-        <div class="step-icon" style="background:linear-gradient(135deg,#7C3AED,#4f46e5);">📲</div>
+        <div class="step-icon" style="background:rgba(124, 58, 237, 0.1); color:#7C3AED;">🤝</div>
         <div class="step-num">BƯỚC 03</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Tạo mã QR</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Nhận mã QR đẹp, in dán lên bàn hoặc gửi file ảnh qua Zalo/Facebook. Khách quét là thấy menu ngay lập tức.</p>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Đàm phán Deal</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">MIND GRID đàm phán trực tiếp với Hãng/NPP để lấy mức giá chiết khấu dự án tốt nhất.</p>
       </div>
       <div class="fade-up">
-        <div class="step-icon" style="background:linear-gradient(135deg,#3b82f6,#0ea5e9);">🚀</div>
+        <div class="step-icon" style="background:rgba(0, 242, 254, 0.1); color:#00F2FE;">🚀</div>
         <div class="step-num">BƯỚC 04</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;">Bắt đầu nhận đơn</h3>
-        <p style="font-size:.9rem;color:#64748b;line-height:1.6;">Khách đặt món online đơn tự động gửi về điện thoại. Phục vụ nhanh, ít sai sót.</p>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:.5rem;color:#FFF;">Triển khai & Đồng hành</h3>
+        <p style="font-size:.9rem;color:#94A3B8;line-height:1.6;">Giám sát lắp đặt, bàn giao CO/CQ và bảo trợ kỹ thuật Enterprise 24/7 sau bán hàng.</p>
       </div>
     </div>
   </div>
@@ -421,95 +400,95 @@
 <section id="use-cases">
   <div class="use-cases-inner">
     <div class="section-header">
-      <div class="section-badge">Phù hợp mọi loại quán</div>
-      <h2 class="section-title">Tăng doanh thu cho<span class="grad-text"> quán nước của bạn</span></h2>
+      <div class="section-badge">Giải Pháp Chuyên Sâu</div>
+      <h2 class="section-title">Hạ tầng chuẩn hóa cho <span class="grad-text">Doanh Nghiệp B2B</span></h2>
     </div>
     <div class="use-case-row fade-up">
       <div class="use-case-img">
-        <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/b132ea867_generated_c145d668.png" alt="Cafe & Coffee" />
+        <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/b132ea867_generated_c145d668.png" alt="Private AI Hardware Infrastructure" />
       </div>
       <div>
-        <div class="use-case-tag">☕ Trà Sữa, Trà & Coffee Shops</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.5rem;margin-bottom:.75rem;">Giải pháp hữu ích cho các quán nước hiện đại</h3>
-        <p style="font-size:.95rem;color:#64748b;line-height:1.7;">Khách đặt trực tiếp qua web của quán → Đơn báo về → Ship ngay
-Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,ShopeeFood...giữ full lợi nhuận. Quán tăng doanh thu nhiều hơn.</p>
+        <div class="use-case-tag">🧠 PRIVATE AI & VECTOR DATABASE NODE</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.4rem;margin-bottom:.75rem;color:#FFF;">Hạ tầng chạy AI Local bảo mật 100% dữ liệu</h3>
+        <p style="font-size:.95rem;color:#94A3B8;line-height:1.7;">Tư vấn lắp đặt cụm Server GPU (NVIDIA Enterprise / RTX Blowers), hệ thống NVMe U.2 Scratch Cache và Storage Pool HDD Enterprise (Toshiba 16TB+) phục vụ cho bài toán RAG, Embeddings và LLM nội bộ.</p>
         <div class="stats-row">
-          <div class="stat-box"><div class="stat-icon">📈</div><div class="stat-val">+30%</div><div class="stat-lbl">Tăng đơn hàng</div></div>
-          <div class="stat-box"><div class="stat-icon">⏱</div><div class="stat-val">-50%</div><div class="stat-lbl">Giảm thời gian order</div></div>
-          <div class="stat-box"><div class="stat-icon">👍</div><div class="stat-val">98%</div><div class="stat-lbl">Khách hài lòng</div></div>
+          <div class="stat-box"><div class="stat-icon">🔒</div><div class="stat-val">100%</div><div class="stat-lbl">Bảo mật nội bộ</div></div>
+          <div class="stat-box"><div class="stat-icon">⚡</div><div class="stat-val">High</div><div class="stat-lbl">Tốc độ Token/sec</div></div>
+          <div class="stat-box"><div class="stat-icon">💰</div><div class="stat-val">-40%</div><div class="stat-lbl">Tiết kiệm OpEx AI</div></div>
         </div>
       </div>
     </div>
     <div class="use-case-row fade-up">
       <div style="order:1;" class="use-case-img">
-        <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/75ba421f7_generated_2f644913.png" alt="Trà sữa & Nước ép" />
+        <img src="https://media.base44.com/images/public/69fe1eaa0b05fac7d83615ed/75ba421f7_generated_2f644913.png" alt="Enterprise Server & Storage Cluster" />
       </div>
       <div style="order:0;">
-        <div class="use-case-tag">Tùy Chỉnh Đơn Hàng Dễ Dàng</div>
-        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.5rem;margin-bottom:.75rem;">Topping, size, đá, đường – tùy chỉnh thoải mái</h3>
-        <p style="font-size:.95rem;color:#64748b;line-height:1.7;">Khách chọn topping, mức đường, mức đá trực tiếp trên website. Giảm sai sót khi ghi order tay, tăng trải nghiệm khách hàng.</p>
+        <div class="use-case-tag">🖥️ SERVER CLUSTER & ENTERPRISE STORAGE POOL</div>
+        <h3 style="font-family:'Lexend',sans-serif;font-weight:700;font-size:1.4rem;margin-bottom:.75rem;color:#FFF;">Cụm máy chủ Ảo hóa & Lưu trữ RAID 24/7</h3>
+        <p style="font-size:.95rem;color:#94A3B8;line-height:1.7;">MIND GRID hỗ trợ đàm phán mua sắm Server Dell PowerEdge, Supermicro Dual CPU, Card RAID LSI và ổ cứng Enterprise Helium chính ngạch với cam kết đàm phán giá tốt nhất thị trường.</p>
         <div class="stats-row">
-          <div class="stat-box"><div class="stat-icon">💰</div><div class="stat-val">+40%</div><div class="stat-lbl">Tăng doanh thu</div></div>
-          <div class="stat-box"><div class="stat-icon">⚡</div><div class="stat-val">2 phút</div><div class="stat-lbl">Thời gian order</div></div>
-          <div class="stat-box"><div class="stat-icon">⭐</div><div class="stat-val">4.9★</div><div class="stat-lbl">Đánh giá của khách hàng </div></div>
+          <div class="stat-box"><div class="stat-icon">🛡️</div><div class="stat-val">99.99%</div><div class="stat-lbl">Uptime liên tục</div></div>
+          <div class="stat-box"><div class="stat-icon">📉</div><div class="stat-val">TCO</div><div class="stat-lbl">Tối ưu tổng chi phí</div></div>
+          <div class="stat-box"><div class="stat-icon">⭐</div><div class="stat-val">CO/CQ</div><div class="stat-lbl">Chính hãng 100%</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PRICING ===== -->
-<section id="pricing" style="padding:5rem 0;">
+<!-- ===== PRICING / MÔ HÌNH ===== -->
+<section id="pricing">
   <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
     <div class="section-header">
-      <div class="section-badge">Bảng giá minh bạch</div>
-      <h2 class="section-title">Chọn gói <span class="grad-text">phù hợp</span> cho quán bạn</h2>
-       <p class="section-sub">💰 PHÍ THIẾT LẬP (Trả 1 lần duy nhất) - Không ràng buộc hợp đồng.</p>
+      <div class="section-badge">Mô Hình Dịch Vụ</div>
+      <h2 class="section-title">Hình thức hợp tác cùng <span class="grad-text">MIND GRID</span></h2>
     </div>
-        <div class="pricing-grid">
-      <!-- Starter -->
+    
+    <div class="pricing-grid">
+      <!-- gói 1 -->
       <div class="price-card fade-up">
-        <div class="price-name">Starter</div>
-        <div class="price-desc">Cho quán mới bắt đầu số hóa</div>
-        <div class="price-amount"><span id="p1">1499k</span></div>
-        <div class="price-period">/1 Lần Triển Khai</div>
+        <div class="price-name">Presales Advisory</div>
+        <div class="price-desc">Dành cho doanh nghiệp cần tư vấn kiến trúc trước khi mua sắm</div>
+        <div class="price-amount">Tư Vấn Độc Lập</div>
+        
         <ul class="price-features">
-          <li>Tối đa 30 món</li>
-          <li>Menu QR + Đặt món online</li>
-          <li>QR Thanh toán Chuyển Khoản </li>
-          <li>Thống kê doanh thu tự động</li>
-                  </ul>
-        <button class="price-btn price-btn-secondary">Dùng Thử 7 Ngày với phí 500k</button>
-      </div>
-      <!-- Professional -->
-      <div class="price-card popular fade-up">
-        <div class="price-popular-badge">⭐ Phổ biến nhất</div>
-        <div class="price-name" style="color:#fff;">Professional</div>
-        <div class="price-desc" style="color:rgba(255,255,255,.55);">Phổ biến nhất cho quán nước</div>
-        <div class="price-amount" style="color:#fff;"><span id="p2">1999k</span></div>
-        <div class="price-period" style="color:rgba(255,255,255,.45);">/1 Lần Triển Khai</div>
-        <ul class="price-features" style="color:rgba(255,255,255,.8);">
-          <li>Tối đa 50 món</li>
-          <li>Menu QR + Đặt món online</li>
-          <li>QR Thanh toán Chuyển Khoản </li>
-          <li>Thống kê doanh thu tự động</li>
+          <li>Khảo sát & Đánh giá Workload hạ tầng</li>
+          <li>Lập bản vẽ kiến trúc Server / Storage / AI</li>
+          <li>Đề xuất danh mục linh kiện tối ưu TCO</li>
+          <li>Hỗ trợ thẩm định báo giá từ các đơn vị cung cấp</li>
         </ul>
-        <button class="price-btn price-btn-primary">Dùng Thử 7 Ngày với phí 900k </button>
+        <button class="price-btn price-btn-secondary" onclick="openModal('Tư Vấn Presales Advisory')">Đăng Ký Tư Vấn</button>
       </div>
-      <!-- Enterprise -->
-      <div class="price-card fade-up">
-        <div class="price-name">Enterprise</div>
-        <div class="price-desc">Cho các quán lớn</div>
-        <div class="price-amount">2999k</div>
-        <div class="price-period" style="margin-bottom:1.5rem;">&nbsp;</div>
+
+      <!-- gói 2 -->
+      <div class="price-card popular fade-up">
+        <div class="price-popular-badge">⭐ Được Doanh Nghiệp Lựa Chọn Nhiều Nhất</div>
+        <div class="price-name">B2B Deal Negotiation</div>
+        <div class="price-desc">Đại diện đàm phán mua sắm & Kết nối NPP</div>
+        <div class="price-amount">Trọn Gói Mua Sắm</div>
+        
         <ul class="price-features">
-          <li>Tối đa 100 món</li>
-          <li>Menu QR + Đặt món online</li>
-          <li>QR Thanh toán Chuyển Khoản </li>
-          <li>Thống kê doanh thu tự động</li>
-          <li>Báo cáo nâng cao</li>
-          </ul>
-        <button class="price-btn price-btn-secondary">Dùng Thử 7 Ngày với phí 1200k</button>
+          <li>Bao gồm toàn bộ khâu Tư vấn Presales</li>
+          <li>Đàm phán Deal giá gốc (Special Pricing) từ Hãng</li>
+          <li>Cung cấp trọn bộ CO/CQ, VAT chính ngạch</li>
+          <li>MIND GRID đứng ra làm 1 đầu mối quản trị rủi ro</li>
+        </ul>
+        <button class="price-btn price-btn-primary" onclick="openModal('Đàm Phán B2B Deal Negotiation')">Gửi Yêu Cầu Dự Án</button>
+      </div>
+
+      <!-- gói 3 -->
+      <div class="price-card fade-up">
+        <div class="price-name">Partner Ecosystem</div>
+        <div class="price-desc">Dành cho Nhà Phân Phối (NPP) & Công ty SI</div>
+        <div class="price-amount">Hợp Tác Mạng Lưới</div>
+        
+        <ul class="price-features">
+          <li>Gia nhập mạng lưới cung cấp thiết bị MIND GRID Hub</li>
+          <li>Nhận cơ hội match-making với các dự án B2B</li>
+          <li>Phối hợp tư vấn Presales giải pháp chuyên sâu</li>
+          <li>Mở rộng kênh phân phối Server, Storage & GPU</li>
+        </ul>
+        <button class="price-btn price-btn-secondary" onclick="openModal('Đăng Ký Hợp Tác Đối Tác (NPP/SI)')">Gia Nhập Mạng Lưới</button>
       </div>
     </div>
   </div>
@@ -519,32 +498,32 @@ Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,Shopee
 <section id="testimonials">
   <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
     <div class="section-header">
-      <div class="section-badge">Khách hàng nói gì</div>
-      <h2 class="section-title">Được <span class="grad-text">yêu thích</span> bởi chủ quán</h2>
+      <div class="section-badge">Đánh giá từ Đối tác</div>
+      <h2 class="section-title">Niềm tin từ các <span class="grad-text">Doanh Nghiệp & SI</span></h2>
     </div>
     <div class="testi-grid">
       <div class="card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">"MenuNuoc giúp quán mình tăng 35% đơn hàng chỉ sau 1 tháng. Khách rất thích tự order qua QR, đỡ phải chờ đợi. Setup cực nhanh, đội ngũ hỗ trợ rất nhiệt tình!"</p>
+        <p class="testi-text">"MIND GRID giúp công ty chúng tôi đàm phán lô 20 ổ HDD Toshiba 16TB Enterprise với mức giá tốt hơn 15% so với tự đi chào giá mua lẻ. Kỹ thuật tư vấn cấu hình RAID vô cùng chuẩn xác!"</p>
         <div class="testi-author">
-          <div class="avatar">MT</div>
-          <div><div class="author-name">Nguyễn Minh Tuấn</div><div class="author-meta">The Coffee Lab • Quận 1, TP.HCM</div></div>
+          <div class="avatar">KT</div>
+          <div class="author-name">Nguyễn Quốc Khánh</div><div class="author-meta">CTO • Fintech Enterprise, Q.3 TP.HCM</div>
         </div>
       </div>
       <div class="card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">"Mình mở quán trà sữa nhỏ, trước đây ghi order tay hay sai. Từ khi dùng MenuNuoc, khách tự chọn topping, mức đường rõ ràng. Giảm sai sót đến 90%!"</p>
+        <p class="testi-text">"Khi tự build hệ thống Private AI để chạy RAG cho dữ liệu công ty, chúng tôi bị rối giữa các dòng GPU và Storage Cache. Đội ngũ MIND GRID đã thiết kế cấu hình Server Supermicro cực kỳ vừa vặn!"</p>
         <div class="testi-author">
-          <div class="avatar">TH</div>
-          <div><div class="author-name">Trần Thị Hạnh</div><div class="author-meta">Hạnh's Tea House • Thủ Đức, TP.HCM</div></div>
+          <div class="avatar">LH</div>
+          <div class="author-name">Lê Minh Hoàng</div><div class="author-meta">Head of AI • Software House, Hà Nội</div>
         </div>
       </div>
       <div class="card fade-up">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">"Với giá 1499k/tháng mà có đầy đủ tính năng order, thanh toán, thống kê. Trước mình trả gấp 3 cho hệ thống POS cồng kềnh. MenuNuoc đơn giản mà hiệu quả hơn!"</p>
+        <p class="testi-text">"Là một đơn vị SI, chúng tôi chọn hợp tác cùng MIND GRID Hub để tối ưu hóa nguồn hàng Server Dell & Linh kiện Enterprise. Làm việc chuyên nghiệp, CO/CQ minh bạch."</p>
         <div class="testi-author">
-          <div class="avatar">LN</div>
-          <div><div class="author-name">Lê Hoàng Nam</div><div class="author-meta">NamJuice Fresh • Hà Nội</div></div>
+          <div class="avatar">PN</div>
+          <div class="author-name">Phạm Đức Nam</div><div class="author-meta">Giám Đốc Kinh Doanh • SI System Partner</div>
         </div>
       </div>
     </div>
@@ -556,16 +535,16 @@ Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,Shopee
   <div class="cta-glow1"></div>
   <div class="cta-glow2"></div>
   <div class="cta-inner">
-        <h2 class="cta-title">Sẵn Sàng ONLINE <span class="grad-text">Quán Nước Của Bạn?</span></h2>
-    <p class="cta-sub">Bắt đầu ngay hôm nay và trải nghiệm sự khác biệt.</p>
+    <div class="cta-offer">Sẵn Sàng Tối Ưu Hạ Tầng Enterprise?</div>
+    <h2 class="cta-title">Kết Nối Với <span class="grad-text">MIND GRID</span> Ngay Hôm Nay</h2>
+    <p class="cta-sub">Nhận bản thiết kế kiến trúc hạ tầng & File Quote đàm phán giá deal tốt nhất cho Doanh nghiệp.</p>
     <div class="cta-btns">
-      <button class="btn-primary pulse-glow">💬 Chat Tư Vấn Ngay →</button>
-      
+      <button class="btn-primary pulse-glow" onclick="openModal('Tư Vấn Nhanh Footer')">💬 Nhận Tư Vấn Presales Trực Tiếp →</button>
     </div>
     <div class="trust-badges">
-      <div class="trust-badge">⏰ Setup trong 24h</div>
-      <div class="trust-badge">🎧 Hỗ trợ trực tuyến</div>
-      <div class="trust-badge">🔓 Không ràng buộc</div>
+      <div class="trust-badge">⏰ Phản hồi trong 2 giờ</div>
+      <div class="trust-badge">🎧 Bảo trợ kỹ thuật Enterprise</div>
+      <div class="trust-badge">🔒 Cam kết bảo mật dữ liệu</div>
     </div>
   </div>
 </section>
@@ -576,43 +555,38 @@ Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,Shopee
     <div class="footer-grid">
       <div>
         <a href="#" class="footer-logo">
-          <div class="nav-logo-box"><span>MN</span></div>
-          <span class="nav-brand" style="color:#fff;">Menu<em>Nuoc</em></span>
+          <div class="nav-logo-box"><span>MG</span></div>
+          <span class="nav-brand" style="color:#fff;">MIND<em>GRID</em></span>
         </a>
-        <p class="footer-desc">Giải pháp Menu QR và đặt món online cho quán nước Việt Nam. Giúp chủ quán hiện đại hóa vận hành, tăng doanh thu.</p>
+        <p class="footer-desc">Trung tâm tư vấn hạ tầng IT độc lập và kết nối mạng lưới NPP/SI hàng đầu tại Việt Nam. Chuyên sâu Máy chủ, Storage & Private AI.</p>
         <div class="footer-contact">
-          <a href="tel:0941925330">📞 0941 925 330</a>
-          <a href="mailto:hotro@menunuoc.com">✉️ hotro@menunuoc.com</a>
-          <a href="#">💬 Zalo: MenuNuoc Support</a>
+          <a href="#">📞 Hotline Presales: Direct Inbox Page</a>
+          <a href="#">✉️ Email: b2b@mindgrid.vn</a>
+          <a href="#">🌐 Website: mindgrid.vn</a>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Sản phẩm</h4>
+        <h4>Giải Pháp</h4>
         <ul>
-          <li><a href="#">Menu QR</a></li>
-          <li><a href="#">Đặt Món Online</a></li>
-          
-         
+          <li><a href="#use-cases">Private AI Node</a></li>
+          <li><a href="#use-cases">Server Cluster</a></li>
+          <li><a href="#use-cases">Enterprise Storage</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Hỗ trợ</h4>
+        <h4>Dịch Vụ B2B</h4>
         <ul>
-          <li><a href="#">Liên Hệ Trực Tiếp</a></li>
-          
-         
-         
+          <li><a href="#pricing">Tư Vấn Presales</a></li>
+          <li><a href="#pricing">Đàm Phán Deal Giá Gốc</a></li>
+          <li><a href="#pricing">Hợp Tác NPP / SI</a></li>
         </ul>
       </div>
-     
-    
-          </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MIND GRID. All rights reserved. Enterprise Infrastructure & Private AI Hub.</p>
     </div>
   </div>
 </footer>
-
-<!-- Floating demo button -->
-<button id="float-btn" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})" title="Xem Demo">▶</button>
 
 <!-- ===== SCRIPTS ===== -->
 <script>
@@ -632,7 +606,6 @@ Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,Shopee
     });
   });
 
-  
   // Scroll animations
   const observer = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
@@ -647,12 +620,80 @@ Không mất 20-30% hoa hồng phí nền tảng như các trang GrabFood,Shopee
     el.dataset.delay = i % 6;
     observer.observe(el);
   });
+</script>
 
-  // Floating button
-  window.addEventListener('scroll', () => {
-    const btn = document.getElementById('float-btn');
-    btn.classList.toggle('show', window.scrollY > 500);
-  }, { passive: true });
+<!-- ===== POPUP ĐĂNG KÝ TƯ VẤN B2B ===== -->
+<div id="registerModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 style="font-family:'Lexend',sans-serif; margin-bottom:15px; font-size: 1.2rem; color:#FFF;">
+      Đăng ký: <span id="packageNameDisplay" style="color:#00F2FE;"></span>
+    </h3>
+    <form id="registerForm">
+      <input type="hidden" id="packageInput" name="package">
+      <input type="text" name="name" class="modal-input" placeholder="Tên Doanh nghiệp / Người đại diện" required>
+      <input type="tel" name="phone" class="modal-input" placeholder="Số điện thoại / Zalo liên hệ" required>
+      <input type="text" name="note" class="modal-input" placeholder="Nhu cầu (Ví dụ: Cần báo giá 10 ổ 16TB, Server AI...)" style="margin-bottom:15px;">
+      <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:10px;" id="submitBtn">
+        Gửi Yêu Cầu Cho MIND GRID
+      </button>
+    </form>
+    <div id="formMessage" style="display:none; color:#00F2FE; font-weight:600; margin-top:15px; text-align:center;">
+      🎉 Gửi thành công! Đội ngũ Presales của MIND GRID sẽ liên hệ ngay qua Zalo/SĐT.
+    </div>
+  </div>
+</div>
+
+<style>
+  /* CSS cho Popup B2B Dark Mode */
+  .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(3, 7, 18, 0.8); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(8px); }
+  .modal-overlay.active { display: flex; animation: fadeIn 0.2s ease-in-out; }
+  .modal-content { background: #0F172A; border: 1px solid rgba(0, 242, 254, 0.3); padding: 2rem; border-radius: 1.5rem; width: 90%; max-width: 440px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
+  .close-btn { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; font-weight: bold; color: #64748B; cursor: pointer; }
+  .close-btn:hover { color: #FFF; }
+  .modal-input { width: 100%; padding: 12px 15px; margin-bottom: 12px; background: #070C18; border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: #FFF; outline: none; transition: border-color 0.2s; }
+  .modal-input:focus { border-color: #00F2FE; }
+  @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+</style>
+
+<script>
+  // Script Google Apps Script Web App của bạn
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzF20MA3afplX2_bP9LNr-w7Fs-n0IFYdO2a2yv8DmZy3BcCQ6ZM9QM5Q9GJp6lyD_c/exec"; 
+
+  function openModal(pkg) {
+    document.getElementById('registerModal').classList.add('active');
+    document.getElementById('packageNameDisplay').innerText = pkg;
+    document.getElementById('packageInput').value = pkg;
+  }
+
+  function closeModal() {
+    document.getElementById('registerModal').classList.remove('active');
+    document.getElementById('formMessage').style.display = 'none';
+    document.getElementById('registerForm').style.display = 'block';
+    document.getElementById('registerForm').reset();
+  }
+
+  const form = document.getElementById('registerForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.innerText = 'Đang gửi yêu cầu...';
+    btn.disabled = true;
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        form.style.display = 'none';
+        document.getElementById('formMessage').style.display = 'block';
+        btn.innerText = 'Gửi Yêu Cầu Cho MIND GRID';
+        btn.disabled = false;
+        setTimeout(closeModal, 4000);
+      })
+      .catch(error => {
+        alert('Lỗi! Vui lòng thử lại sau hoặc inbox trực tiếp.');
+        btn.innerText = 'Gửi Yêu Cầu Cho MIND GRID';
+        btn.disabled = false;
+      });
+  });
 </script>
 </body>
 </html>
